@@ -6,7 +6,7 @@
     <title>Taryfikator Policyjny</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
@@ -14,12 +14,35 @@
         }
 
         header {
+            font-family: "Comic Sans MS", serif;
             background-color: #003366;
             color: white;
             padding: 20px;
             font-size: 24px;
         }
 
+        h1 {
+            color: white;
+            text-shadow: 
+                -2px -3px 0 #2e2e2e,  
+                 2px -3px 0 #2e2e2e,
+                -2px  2px 0 #2e2e2e,
+                 2px  2px 0 #2e2e2e;
+        }
+
+        a {
+            color: rgb(255, 255, 0);
+        }
+
+        footer {
+            background-color: #2e2e2e;
+            color: white;
+            padding: 2.5px;
+            font-size: 20px;
+            margin-top: auto;
+            text-align: center;
+        }
+        
         main {
             margin: 20px auto;
             width: 80%;
@@ -32,7 +55,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
-
+       
         thead {
             background-color: #003366;
             color: white;
@@ -153,15 +176,15 @@
 
     <script>
         const trafficOffenses = [
-            ["Przekroczenie predkosci o 20 km/h", 200, 0],
-            ["Przekroczenie predkosci o 50 km/h", 500, 0],
-            ["Przekroczenie predkosci o 90 km/h", 2000, 0],
+            ["Przekroczenie prędkosci o 20+ km/h", 200, 0],
+            ["Przekroczenie prędkosci o 50+ km/h", 500, 0],
+            ["Przekroczenie prędkosci o 90+ km/h", 2000, 0],
             ["Przejazd na czerwonym świetle", 400, 0],
             ["Jazda bez pasów", 100, 0],
             ["Nieprawidłowe parkowanie", 150, 0],
             ["Nieustapienię pierwszeństwa", 300, 0],
-            ["Ucieczka przed policja", 10000, 24],
-            ["Jazda pod wplywem alkoholu", 5000, 12],
+            ["Ucieczka przed policją", 10000, 24],
+            ["Jazda pod wpływem alkoholu", 5000, 12],
             ["Próba wyłudzenia odszkodowania samochodowego", 20000, 48],
         ];
 
@@ -187,14 +210,14 @@
             ["Sprzedaż nielegalnych substancji", 0, 72],
             ["Posiadanie nielegalnych substancji", 3000, 12],
             ["Napad z bronią palną", 0, 72],
-            ["Falszowanie podpisu", 15000, 24],
-            ["Kradziez z wlamaniem", 50000, 72],
+            ["Fałszowanie podpisu", 15000, 24],
+            ["Kradzież z włamaniem", 50000, 72],
             ["Posiadanie materialow pornograficznych z dziecmi", 100000, 120],
-            ["Zabojstwo", 0, 180],
+            ["Próba morderstwa", 0, 180],
             ["Morderstwo (Dożywocie)", 0, 9999],
-            ["Falszywe wezwanie sluzb ratunkowych", 5000, 0],
-            ["Zlosliwe wykorzystywanie cudzego mienia", 100, 0],
-            ["Zlosliwe niszczenie infrastruktury publicznej", 10000, 12],
+            ["Fałszywe wezwanie słuzb ratunkowych", 5000, 0],
+            ["Złośliwe wykorzystywanie cudzego mienia", 100, 0],
+            ["Złosliwe niszczenie infrastruktury publicznej", 10000, 12],
             ["Proba przekupstwa urzednikow", 0, 24],
             ["Zatrudnianie dzieci", 15000, 24],
             ["Sprzedaz narkotykow", 0, 72],
@@ -226,5 +249,9 @@
         populateTable("trafficOffenses", trafficOffenses);
         populateTable("generalOffenses", generalOffenses);
     </script>
+    <footer>
+        <h2>Zrobione dla <a href="https://discord.gg/Cbtqkaf25n">Bogdany RP</a></h2>
+        <h3>Przez <a href="https://guns.lol/michaelfries">Michael Fries</a></h3>
+    </footer>
 </body>
 </html>
